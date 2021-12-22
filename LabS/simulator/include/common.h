@@ -10,7 +10,6 @@
 #include <iostream>
 #include <fstream>
 #include <cstdio>
-
 #include <array>
 #include <vector>
 #include <cmath>

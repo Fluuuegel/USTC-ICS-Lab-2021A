@@ -9,7 +9,7 @@
 
 #include "common.h"
 #include "register.h"
-#include "memory.h"
+#include "_memory.h"
 
 namespace virtual_machine_nsp {
 
@@ -57,7 +57,7 @@ class virtual_machine_tp {
     void VM_TRAP(int16_t inst);
 
     // Managements
-    virtual_machine_tp() {}
+    virtual_machine_tp() {} //无参数构造函数
     virtual_machine_tp(const int16_t address, const std::string &memfile, const std::string &regfile);
     void UpdateCondRegister(int reg);
     void SetReg(const register_tp &new_reg);
