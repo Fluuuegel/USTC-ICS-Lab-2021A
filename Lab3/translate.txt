@@ -1,0 +1,34 @@
+.ORIG x3000
+				LD R6, CMP
+				LEA R1, LB1
+				ADD R0, R0, #-2
+				BRnz TO1
+	RECUR	ADD R2, R2, #1
+				LEA R1, LB1
+				ADD R2, R2, #-3
+				BRz TO2
+				ADD R2, R2,#3
+				ADD R1, R1, R2
+				LDR R5, R1, #-1
+				BRnzp TO3
+	TO2		LDR R5, R1, #2
+	TO3   ADD R4, R4, R4
+				ADD R4, R4, R5
+				AND R4, R4, R6
+				STR R4, R1, #0
+				BRnzp TO4
+	TO1		ADD R3, R0, #2
+				ADD R1, R1, R2
+	TO4		LDR R7, R1, #0
+				ADD R0, R0, #-1
+				BRp RECUR
+	HALT
+	LB1		.FILL #2
+	LB2		.FILL #1
+	LB3		.FILL #1
+	CMP		.FILL x03FF
+	STN1	.FILL x03A2
+	STN2	.FILL x00F6
+	STN3	.FILL	x0182
+	STN4	.FILL x02C2
+		.END
