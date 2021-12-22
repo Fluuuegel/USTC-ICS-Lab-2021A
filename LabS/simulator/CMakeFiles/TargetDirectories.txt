@@ -1,0 +1,3 @@
+/Users/fluegelcat/Documents/Code/Simulator/CMakeFiles/lc3simulator.dir
+/Users/fluegelcat/Documents/Code/Simulator/CMakeFiles/edit_cache.dir
+/Users/fluegelcat/Documents/Code/Simulator/CMakeFiles/rebuild_cache.dir
